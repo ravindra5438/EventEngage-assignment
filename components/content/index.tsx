@@ -61,7 +61,7 @@ const Content = () => {
                     <div className={contentStyle.showcaseContainer}>
                         <div className={contentStyle.showcaseContainerText}>
                             <Image src="/images/weworkLogo.png" alt="wework.png" width={160} height={40} />
-                            <h6>For all the ways you work, we're here</h6>
+                            <h6>For all the ways you work, we&apos;re here</h6>
                         </div>
                     </div>
                     <div className={contentStyle.iconContainer}>
