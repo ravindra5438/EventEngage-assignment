@@ -1,0 +1,81 @@
+@import "../../styles/variables.scss";
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing-medium 0;
+}
+
+.image{
+    width: 100%;
+    aspect-ratio: 6/1;
+    border-radius: 12px;
+    background: url("../../public/images/shutterstock_2139069083\ 1.png");
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+.slash{
+    background-color: rgba(255, 255, 255, .7);
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skewX(-25deg) translateX(20%);
+}
+.skewedText{
+    transform: skewX(25deg);
+}
+.endSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $spacing-large*2;
+    margin-bottom: $spacing-medium;   
+}
+.logoShowcase{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px;
+    bottom: -40px;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+.relativeContainer{
+    position: relative;
+}
+
+@media screen and (max-width:1024px) {
+    .image{
+        aspect-ratio: 4/1;
+    }    
+    .header>h1{
+        font-size: 1.5rem;
+    }
+    .slash>h1{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .image{
+        aspect-ratio: 3/1;
+    }    
+}
+
+@media screen and (max-width:600px) {
+    .header>h1{
+        font-size: 20px;
+    }
+    .slash>h1{
+        font-size: 20px;
+    }
+    .endSection>h5{
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,86 @@
+@import "../../styles/variables.scss";
+
+#nav{
+    padding: $spacing-medium 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.outerCircle{
+    height: 36px;
+    width: 36px;
+    background-color: #04433B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.innerCircle{
+    height: 24px;
+    width: 24px;
+    background-color: #00B686;
+    border-radius: 50%;
+}
+.logoContainer{
+    display: flex;
+    align-items: center;
+}
+.icon{
+    color: $dark-text;
+    font-size: 20px;
+    transition: 300ms ease-in-out;
+}
+.icon:hover{
+    cursor: pointer;
+    color: #00B686;
+}
+.navRight{
+    display: flex;
+    align-items: center;
+    gap: $spacing-large;
+}
+.ham{
+    font-size: 24px;
+    padding: 0 $spacing-small;
+    color: grey;
+    margin: 0;
+}
+.drawerContentContainer{
+    margin-inline: 20%;
+}
+.drawerContent{
+    display: flex;
+    align-items: center;
+}
+.drawerContent > span{
+    margin: 0 $spacing-medium;
+    transition: 300ms ease-in-out;
+    
+}
+.drawerContent>span:hover{
+    cursor: pointer;
+    color: #00B686;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    padding: $spacing-medium;
+}
+
+.profileNameContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 0 $spacing-medium;
+}
+
+@media screen and (min-width:600px) {
+    .ham{
+        display: none;
+    }    
+}
+
+@media screen and (max-width:600px) {
+    .navRight{
+        display: none;
+    }    
+}

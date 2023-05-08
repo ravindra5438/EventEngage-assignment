@@ -1,0 +1,135 @@
+@import "../../styles/variables.scss";
+
+.drawerButton{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+}
+.contentContainer{
+    display: flex;
+}
+.buttonContainer{
+    display: flex;
+    justify-content: space-between;
+    overflow: scroll;
+    flex-wrap: nowrap;
+}
+.leftButtonListContainer{
+    display: flex;
+}
+.contentHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacing-medium;
+}
+.contentHeader>h2{
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+.actionContainer{
+    color: grey;
+    border: 2px solid grey;
+    padding: $spacing-small;
+    border-radius: $spacing-small;
+}
+.showcaseContainer{
+    width: 100%;
+    aspect-ratio: 4/2;
+    background: url("../../public/images/contentBackground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: $spacing-medium;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconContainer{
+    display: flex;
+    gap: $spacing-medium;
+    color: grey;
+    padding: $spacing-medium;
+}
+.middleIconContainer{
+    position:absolute;
+    top:8px;
+    border: 2px solid rgba(128, 128, 128, 0.363);
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.664);
+    padding: 7px 6px;
+    border-radius: 8px;
+    color: rgba(128, 128, 128, 0.74);
+    backdrop-filter: blur(5px);
+
+}
+.icon{
+    margin-inline: 8px;
+    color: $dark-text;
+    font-size: 20px;
+    transition: 300ms ease-in-out;
+}
+.icon:hover{
+    cursor: pointer;
+    color: #00B686;
+}
+.showcaseContainerText{
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    padding: $spacing-medium $spacing-medium;
+    border-radius: $spacing-small;
+}
+.imageContainer{
+    flex:.8
+}
+.overviewContainer{
+    flex: .2;
+}
+.overview{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #fff;
+    color: gray;
+    padding: 0 $spacing-medium;
+    width: fit-content;
+    border-radius: $spacing-medium;
+}
+.overview>h3{
+    margin: 0;
+    padding: $spacing-medium;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+}
+.overview>p{
+    margin: 0;
+    padding: $spacing-medium;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    transition: 300ms ease-in-out;
+}
+.overview>p:hover{
+    color: #00b96b;
+}
+.showcaseContainerText > h6{
+    margin:$spacing-medium;
+}
+
+@media screen and (max-width:1024px) {
+    .overviewContainer{
+        display: none;
+    }
+    .imageContainer{
+        flex: 1;
+    }
+}
