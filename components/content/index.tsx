@@ -51,7 +51,7 @@ const Content = () => {
                     </div>
                     <div style={{width:"100%",position:"relative",display:"flex",justifyContent:"center"}}>
                         <div className={contentStyle.middleIconContainer}>
-                            <FilePdfOutlined className={contentStyle.icon} /> 1/15 &nbsp;|
+                            <FilePdfOutlined className={contentStyle.icon} /> 1/15 |
                             <ArrowDownOutlined className={contentStyle.icon}/>|
                             <ZoomOutOutlined className={contentStyle.icon}/>|
                             <ZoomInOutlined className={contentStyle.icon}/>|

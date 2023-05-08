@@ -13,7 +13,7 @@ const Scroller = () => {
             <Text type="success">3%</Text>
             </div>
             <div>
-            {arr.map(num =><button style={{borderRadius:4,border:'none',height:6,width:2,marginInline:1,backgroundColor:num === 1?'green':''}}></button>)}
+            {arr.map((num,index) =><button key={index} style={{borderRadius:4,border:'none',height:6,width:2,marginInline:1,backgroundColor:num === 1?'green':''}}></button>)}
             </div>
         </div>
     )
